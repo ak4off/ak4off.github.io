@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshaya S - Resume & Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #003366; /* MidnightBlue equivalent */
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+        .accordion .card {
+            border: none;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .accordion .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .card-header h5 {
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        ul li:before {
+            content: '\f058'; /* Font Awesome check circle */
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            left: 0;
+            color: #003366;
+        }
+        .skills ul li:before, .certifications ul li:before, .languages {
+            content: none;
+            padding-left: 0;
+        }
+        .languages {
+            font-style: italic;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        section {
+            animation: fadeIn 1s ease-out;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .contact-info {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Akshaya S</h1>
+        <div class="contact-info">
+            <a href="mailto:iamakshaya7@gmail.com"><i class="fas fa-envelope"></i> iamakshaya7@gmail.com</a> |
+            <i class="fas fa-phone"></i> +91-8610886357 |
+            <a href="https://linkedin.com/in/akshaya-s-m/"><i class="fab fa-linkedin"></i> linkedin.com/in/akshaya-s-m</a> |
+            <a href="https://github.com/ak4off"><i class="fab fa-github"></i> github.com/ak4off</a>
+        </div>
+    </header>
+
+    <!-- Objective -->
+    <section id="objective">
+        <h2>Objective</h2>
+        <p>Passionate Computer Science graduate with experience in ASR model development, data engineering, and software testing. Seeking opportunities in Machine Learning, Speech Processing, and Software Development roles to contribute technical expertise and problem-solving skills.</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="accordion" id="educationAccordion">
+            <div class="card">
+                <div class="card-header" id="edu1">
+                    <h5 data-toggle="collapse" data-target="#collapseEdu1" aria-expanded="true" aria-controls="collapseEdu1">
+                        B.E. - Computer Science and Engineering (2015 -- 2019)
+                    </h5>
+                </div>
+                <div id="collapseEdu1" class="collapse show" aria-labelledby="edu1" data-parent="#educationAccordion">
+                    <div class="card-body">
+                        PSNA College of Engineering and Technology, Anna University<br>
+                        CGPA: 8.15/10
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="edu2">
+                    <h5 data-toggle="collapse" data-target="#collapseEdu2" aria-expanded="false" aria-controls="collapseEdu2">
+                        Higher Secondary Certificate (HSC) (2015)
+                    </h5>
+                </div>
+                <div id="collapseEdu2" class="collapse" aria-labelledby="edu2" data-parent="#educationAccordion">
+                    <div class="card-body">
+                        TVS Matriculation Higher Secondary School<br>
+                        Percentage: 95.80%
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="edu3">
+                    <h5 data-toggle="collapse" data-target="#collapseEdu3" aria-expanded="false" aria-controls="collapseEdu3">
+                        Secondary School Leaving Certificate (SSLC) (2013)
+                    </h5>
+                </div>
+                <div id="collapseEdu3" class="collapse" aria-labelledby="edu3" data-parent="#educationAccordion">
+                    <div class="card-body">
+                        Dolphin Matriculation Higher Secondary School<br>
+                        Percentage: 97%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="accordion" id="experienceAccordion">
+            <div class="card">
+                <div class="card-header" id="exp1">
+                    <h5 data-toggle="collapse" data-target="#collapseExp1" aria-expanded="true" aria-controls="collapseExp1">
+                        Project Associate - IIT-M/IC&SR (Jan 2024 -- Present)
+                    </h5>
+                </div>
+                <div id="collapseExp1" class="collapse show" aria-labelledby="exp1" data-parent="#experienceAccordion">
+                    <div class="card-body">
+                        Chennai<br>
+                        <ul>
+                            <li>ASR model building using Transformer architecture with the ESPnet toolkit.</li>
+                            <li>Pretraining and finetuning SSL models (data2vecAQC) using FAIRSEQ.</li>
+                            <li>Data engineering and automation of pipelines for large-scale speech processing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="exp2">
+                    <h5 data-toggle="collapse" data-target="#collapseExp2" aria-expanded="false" aria-controls="collapseExp2">
+                        Apprentice - Fujitsu Consultancy India (Feb 2022 -- July 2023)
+                    </h5>
+                </div>
+                <div id="collapseExp2" class="collapse" aria-labelledby="exp2" data-parent="#experienceAccordion">
+                    <div class="card-body">
+                        Chennai<br>
+                        <ul>
+                            <li>Software testing using Selenium.</li>
+                            <li>Trained in programming languages and SQL databases.</li>
+                            <li>Testing training focused on Jira, UFT, Selenium, and Python.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="accordion" id="projectsAccordion">
+            <div class="card">
+                <div class="card-header" id="proj1">
+                    <h5 data-toggle="collapse" data-target="#collapseProj1" aria-expanded="true" aria-controls="collapseProj1">
+                        Speech Technologies in Indian Languages (2024)
+                    </h5>
+                </div>
+                <div id="collapseProj1" class="collapse show" aria-labelledby="proj1" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        IIT-Madras (Project Associate)<br>
+                        Python, ESPnet, FAIRSEQ, K2, Icefall, Docker, HTML<br>
+                        <ul>
+                            <li>Developed ASR models using ESPnet with Transformer architecture for Indian languages.</li>
+                            <li>Conducted pretraining and finetuning of SSL models (data2vecAQC) using FAIRSEQ on large speech datasets.</li>
+                            <li>Explored K2 and Icefall frameworks for ASR model training.</li>
+                            <li>Automated data preparation, augmentation, and evaluation pipelines using Python & Bash.</li>
+                            <li>Built and maintained Docker images for training, inference, and deployment workflows.</li>
+                            <li>Maintained project website to reflect ongoing research and documentation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Python, C++, Java</li>
+            <li><strong>Frameworks/Tools:</strong> PyTorch, Docker, Git, FAIRSEQ, ESPnet, K2, Icefall, WandB</li>
+            <li><strong>Other:</strong> Linux, Bash, LaTeX, HTML, CSS</li>
+        </ul>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>DA6401 - Introduction to Deep Learning -- IITM (2025)</li>
+            <li>CS5691 - Pattern Recognition and Machine Learning -- IITM (2024)</li>
+            <li>MLUP001 - AI/ML using Python -- IITM Pravartak Technologies Foundation (2025)</li>
+            <li>Programming in Java -- SSI (2016)</li>
+        </ul>
+    </section>
+
+    <!-- Languages -->
+    <section id="languages">
+        <h2>Languages</h2>
+        <p class="languages">English (Fluent), Tamil (Native), Hindi (Intermediate)</p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
